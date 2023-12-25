@@ -107,7 +107,7 @@ a {
   border: 1px solid #e9edf2;
 }
 .ss-container {
-  width: 798px;
+  max-width: 798px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
