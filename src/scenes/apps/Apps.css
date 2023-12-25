@@ -1,0 +1,59 @@
+.apps-header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+.app-row-1 p {
+  color: #2b343f;
+  font-size: 28px;
+  font-weight: lighter;
+}
+.app-row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.apps-row-2-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.apps-row-2-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.apps-row-2-right div {
+  text-align: left;
+}
+.apps-date-picker {
+  width: 187px;
+  height: 40px;
+}
+.today-btn {
+  width: 84px;
+  height: 40px;
+}
+.all-notes-btn {
+  width: 84px;
+  height: 40px;
+}
+.apps-row-2-left div {
+  margin-right: 8px;
+}
+.each-select-div {
+  margin-left: 15px;
+}
+.each-select-div p {
+  margin: 4px 0;
+  color: #79899d;
+}
+.highlighted-row {
+  background-color: #fff8d3;
+  font-size: 15px;
+}
+.apps-table-container {
+  width: 100%;
+  margin: 60px 0px;
+}
