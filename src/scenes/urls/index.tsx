@@ -225,7 +225,7 @@ const columns = [
     title: 'Site',
     dataIndex: 'site',
     key: 'site',
-    width: 900,
+    width: 850,
   },
   {
     title: 'Time Spent (hrs)',
