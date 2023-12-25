@@ -69,26 +69,26 @@ export const Sidebar = () => {
   ]
 
   const reportsMenu = [
-        {
-          label: "Time & activity",
-          key: "timeandactivity",
-          link: '/timeandactivity'
-        },
-        {
-          label: "Daily totals (Weekly)",
-          key: "dailytotals",
-          link: '/dailytotals'
-        },
-        {
-          label: "Amounts owed",
-          key: "amountsowed",
-          link: '/amountsowed'
-        },
-        {
-          label: "Payments",
-          key: "payments",
-          link: '/payments'
-        },
+        // {
+        //   label: "Time & activity",
+        //   key: "timeandactivity",
+        //   link: '/timeandactivity'
+        // },
+        // {
+        //   label: "Daily totals (Weekly)",
+        //   key: "dailytotals",
+        //   link: '/dailytotals'
+        // },
+        // {
+        //   label: "Amounts owed",
+        //   key: "amountsowed",
+        //   link: '/amountsowed'
+        // },
+        // {
+        //   label: "Payments",
+        //   key: "payments",
+        //   link: '/payments'
+        // },
         {
           label: "All reports",
           key: "allreports",
@@ -184,11 +184,11 @@ export const Sidebar = () => {
               </SubMenu>
             </Menu>
         
-            <Menu theme="light" mode="inline">
+            {/* <Menu theme="light" mode="inline">
               <Menu.Item key="insights" icon={<TiLightbulb size={21} />} >
                 <Link to='/insights'>Insights</Link> 
               </Menu.Item>    
-            </Menu>
+            </Menu> */}
                   
             <Menu theme="light" mode="inline">
               <SubMenu key="projectManagement" icon={<IoMdCheckboxOutline size={21} />} title="Project Management">
@@ -216,11 +216,11 @@ export const Sidebar = () => {
               </Menu.Item>    
             </Menu>
         
-            <Menu theme="light" mode="inline">
+            {/* <Menu theme="light" mode="inline">
               <Menu.Item key="transactions" icon={<HiOutlineCurrencyRupee size={21} />} >
                 <Link to='/expenses'>Expenses</Link> 
               </Menu.Item>    
-            </Menu>
+            </Menu> */}
         </Sider>
     </div>
   )

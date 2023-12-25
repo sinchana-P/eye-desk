@@ -12,6 +12,7 @@ import { Apps } from './scenes/apps';
 import { Urls } from './scenes/urls';
 import { Projects } from './scenes/projects';
 import { Teams } from './scenes/teams';
+import { CardLayout } from './scenes/reports/AllReports';
 
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
             <Route path='/apps' element={ <Apps /> } />
             <Route path='/urls' element={ <Urls /> } />
             <Route path='/projects' element={ <Projects /> } />
-            <Route path='/teams' element={ <Teams /> } />
+            <Route path='/teams' element={<Teams />} />
+            <Route path='/reports' element={ <CardLayout /> } />
+
           </Routes>
           </Layout>
       </Layout>
