@@ -247,6 +247,7 @@ export const Urls = () => {
             <div className='app-row-1'>
                 <p>URL activity</p>
             </div>
+              
             <div className='app-row-2'>
                 <div className="apps-row-2-left">
                       <div>
@@ -306,6 +307,7 @@ export const Urls = () => {
                       </div>
                 </div>
             </div>
+              
           </div>
           
 

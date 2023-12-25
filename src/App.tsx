@@ -10,6 +10,8 @@ import { Approvals } from './scenes/approvals';
 import { Screenshots } from './scenes/screenshots';
 import { Apps } from './scenes/apps';
 import { Urls } from './scenes/urls';
+import { Projects } from './scenes/projects';
+import { Teams } from './scenes/teams';
 
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
             <Route path='/screenshots' element={ <Screenshots /> } />
             <Route path='/apps' element={ <Apps /> } />
             <Route path='/urls' element={ <Urls /> } />
-            </Routes>
+            <Route path='/projects' element={ <Projects /> } />
+            <Route path='/teams' element={ <Teams /> } />
+          </Routes>
           </Layout>
       </Layout>
     </>

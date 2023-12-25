@@ -61,11 +61,11 @@ export const Sidebar = () => {
           key: "projects",
           link: '/projects'
         },
-        {
-          label: "Tasks",
-          key: "tasks",
-          link: '/tasks'
-        }
+        // {
+        //   label: "Tasks",
+        //   key: "tasks",
+        //   link: '/tasks'
+        // }
   ]
 
   const reportsMenu = [
