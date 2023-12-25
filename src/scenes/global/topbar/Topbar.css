@@ -13,6 +13,7 @@
   font-size: 25px;
   color: #617083;
   margin-top: 5px;
+  cursor: pointer;
 }
 .icons-container .each-icon {
   padding: 0 10px;

@@ -113,9 +113,9 @@ export const Sidebar = () => {
         <div className='logo-container' style={{ backgroundColor: 'white' }}>
           {
             collapsed ? (
-                <img src="../../../../public/assets/logo2.png" alt="logo" style={{ width: '40px', height: 'auto' }} />
+                <img src="../../../assets/logo2.png" alt="logo" style={{ width: '40px', height: 'auto' }} />
             ): (
-              <img src="../../../../public/assets/logo-text.png" alt="logo" style={{ width: '150px', height: 'auto' }} />
+              <img src="../../../assets/logo-text.png" alt="logo" style={{ width: '150px', height: 'auto' }} />
             )
           }
         </div>  
@@ -161,7 +161,19 @@ export const Sidebar = () => {
                 ))}
               </SubMenu>
             </Menu>
-        
+
+            {/* <Menu theme="light" mode="inline" items={[
+              {
+                key: 'timesheets',
+                icon: <WiTime3 size={21} />,
+                title: 'Timesheets',
+                items: timesheetsMenu.map((item) => ({
+                  key: item.key,
+                  label: <Link to={item.link}>{item.label}</Link>,
+                })),
+              },
+            ]} />
+         */}
             <Menu theme="light" mode="inline">
               <SubMenu key="activity" icon={<GoGraph size={21} />} title="Activity">
                 {activitiesMenu.map((item) => (
@@ -213,3 +225,8 @@ export const Sidebar = () => {
     </div>
   )
 }
+
+
+// <img src="../../../../public/assets/logo2.png" alt="logo" style={{ width: '40px', height: 'auto' }} />
+// ): (
+// <img src="../../../../public/assets/logo-text.png" alt="logo" style={{ width: '150px', height: 'auto' }} />
