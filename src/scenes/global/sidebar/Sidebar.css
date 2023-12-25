@@ -5,7 +5,8 @@
   padding: 20px 20px;
 }
 .sidebar-container {
-  background-color: #f2f5f8;
+  background-color: white;
+  min-height: 100vh;
 }
 .arrow {
   position: absolute;

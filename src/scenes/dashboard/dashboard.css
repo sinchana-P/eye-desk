@@ -1,0 +1,236 @@
+a {
+  cursor: pointer;
+}
+.dashboard-container {
+  background-color: #f9f9f9;
+  padding: 30px;
+  scroll-behavior: smooth;
+}
+.header-wrapper {
+  min-height: max-content;
+}
+.dashboard-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-header-container p {
+  color: #2b343f;
+  font-size: 28px;
+  margin: 0;
+}
+.dashboard-header-container span {
+  color: #2b343f;
+  font-size: 13px;
+  margin: 0;
+}
+.widgets {
+  margin-left: 90.7rem;
+}
+.widgets p {
+  width: 145px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #2b343f;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #e9edf2;
+  cursor: pointer;
+  margin: 9px 20px;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  width: auto;
+  flex-wrap: wrap;
+}
+.each-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 393px;
+  padding: 10px 8px;
+  margin-right: 6px;
+  border: 1px solid #e9edf2;
+}
+.each-card div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+.each-card div p {
+  color: #617083;
+  font-size: 14px;
+  font-weight: bold;
+}
+.each-card div h5 {
+  color: #2b343f;
+  font-size: 26px;
+  margin: 10px 0;
+  line-height: 14px;
+  font-weight: lighter;
+  padding: 8px 0;
+}
+.each-card div span {
+  font-size: 12px;
+  color: #18d06b;
+}
+.two-columns-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.first-column-container {
+  box-sizing: border-box;
+  grid-column: 1 / 2;
+}
+.second-column-container {
+  box-sizing: border-box;
+  grid-column: 2 / 3;
+}
+.recent-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 20px;
+  margin-top: 40px;
+  border: 1px solid #e9edf2;
+}
+.ss-container {
+  width: 798px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.recent-container div a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px ;
+}
+.title-recent-container {
+  width: 785px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 2px;
+  align-items: center;
+}
+.week-container {
+  background-color: #ffffff;
+  margin-top: 40px;
+  padding: 8px 20px 20px 20px;
+  border: 1px solid #e9edf2;
+}
+.graph-container {
+  width: 793px;
+}
+.week-container div {
+  margin-right: 6px;
+}
+.title-week-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.week-container div a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px ;
+}
+.manual-container {
+  max-height: 292px;
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  border: 1px solid #e9edf2;
+}
+.manual-container div {
+  margin-right: 6px;
+}
+.title-manual-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.manual-table {
+  width: 793px;
+  padding: 0 20px;
+}
+.manual-container div a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px ;
+}
+.timeSheet-container {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  border: 1px solid #e9edf2;
+}
+.timeSheet-container div {
+  margin-right: 6px;
+}
+.title-timeSheet-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeSheet-table {
+  padding: 0 20px;
+}
+.timeSheet-container div a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px ;
+}
+.projects-container {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  border: 1px solid #e9edf2;
+}
+.projects-container div {
+  margin-right: 6px;
+}
+.title-project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-table {
+  width: 693px;
+  padding: 0 20px;
+  width: auto;
+}
+.projects-container div a {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px ;
+}
