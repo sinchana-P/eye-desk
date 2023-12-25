@@ -138,19 +138,20 @@ export const Timesheets = () => {
         
             <div className="row-two">
             <div>
-                    <RangePicker
+              <RangePicker
+                style={{ height: '40px', width: '300px' }}
                     // showTime={{ format: 'HH:mm' }}
                     format="YYYY-MM-DD HH:mm"
                     // onChange={onChange}
                     // onOk={onOk}
-                />
+              />
             </div>
                 <div className='row-two-right'>
                 <div>
                     <p>Member</p>
                     <Select
                         defaultValue="lucy"
-                        style={{ width: 120 }}
+                        style={{ height: '40px', width: '140px' }}
                         // onChange={handleChange}
                         options={[
                             { value: 'jack', label: 'Jack' },
@@ -159,7 +160,7 @@ export const Timesheets = () => {
                         ]}
                     />
                 </div>
-                <Button>Filters</Button>
+                <div className='filter-btn'><Button style={{ border: '1px solid #2aa7ff', borderRadius: '8px', color: '#2aa7ff', height: '40px', width: '84px' }}>Filters</Button></div>
             </div>
             </div> 
             
