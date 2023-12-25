@@ -2,7 +2,6 @@ import React from 'react'
 import './Screenshots.css'
 
 import { Button, DatePicker, Progress, Select, Timeline } from 'antd';
-// import { PiNotePencilLight } from "react-icons/pi";
 import { PiNotePencilBold } from "react-icons/pi";
 import ssImg from '../../assets/ss.png'
 import ssImg2 from '../../assets/ss2.png'

@@ -8,12 +8,12 @@ import { Dashboard } from './scenes/dashboard';
 import { Timesheets } from './scenes/timesheets';
 import { Approvals } from './scenes/approvals';
 import { Screenshots } from './scenes/screenshots';
+import { Apps } from './scenes/apps';
 
 
 function App() {
 
   return (
-    
     <>
       <Layout>
         <Sidebar />
@@ -24,6 +24,7 @@ function App() {
             <Route path='/timesheets' element={ <Timesheets /> } />
             <Route path='/approvals' element={ <Approvals /> } />
             <Route path='/screenshots' element={ <Screenshots /> } />
+            <Route path='/apps' element={ <Apps /> } />
             </Routes>
           </Layout>
       </Layout>
