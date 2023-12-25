@@ -1,0 +1,34 @@
+.approval-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2b343f;
+  font-weight: light;
+  margin-bottom: 0;
+}
+.text-container p {
+  width: 900px;
+  height: 88px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #617083;
+}
+.img-container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.img-container img {
+  width: 715px;
+  height: 320px;
+  box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 4px 0px;
+}
