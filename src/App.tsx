@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Dashboard } from './scenes/dashboard';
 import { Timesheets } from './scenes/timesheets';
 import { Approvals } from './scenes/approvals';
+import { Screenshots } from './scenes/screenshots';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path='/' element={ <Dashboard /> } />
             <Route path='/timesheets' element={ <Timesheets /> } />
             <Route path='/approvals' element={ <Approvals /> } />
+            <Route path='/screenshots' element={ <Screenshots /> } />
             </Routes>
           </Layout>
       </Layout>
