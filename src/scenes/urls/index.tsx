@@ -1,245 +1,251 @@
+import { Button, DatePicker, Select, Table } from 'antd'
 import React from 'react'
-import './Apps.css'
-
-import { Button, DatePicker, Select, Table, Divider } from 'antd'
+import '../apps/Apps.css'
 
 const dataSource = [
-{
-    key: 'divider0',
-    divider: true,
+  {
+    id: 'divider0',
+    isDivider: true,
     date: 'Mon, Dec 25, 2023 12:00 am IST',
   },
   {
-    key: '1',
+    id: '1',
     project: 'Interns',
-    appName: 'Google Chrome',
-    timeSpent: '0:36:31',
-    sessions: 8,
+    site: 'app.hubstaff.com',
+    timeSpent: '0:01:26',
   },
   {
-    key: '2',
+    id: '2',
     project: 'Interns',
-    appName: 'Microsoft® Windows® Operating System',
-    timeSpent: '0:10:16',
+    site: 'google.com',
+    timeSpent: '0:00:23',
+  },
+  {
+    id: '3',
+    project: 'Interns',
+    site: 'react-icons.github.io',
+    timeSpent: '0:00:02',
+  },
+  {
+    id: 'divider1',
+    isDivider: true,
+    date: 'Mon, Dec 25, 2023 1:00 am IST',
+  },
+  {
+    id: '4',
+    project: 'Interns',
+    site: 'app.hubstaff.com',
+    timeSpent: '0:12:39',
+  },
+  {
+    id: '5',
+    project: 'Interns',
+    site: 'figma.com',
+    timeSpent: '0:00:01',
+  },
+  {
+    id: 'divider2',
+    isDivider: true,
+    date: 'Mon, Dec 25, 2023 8:00 am IST',
+  },
+  {
+    id: '6',
+    project: 'Interns',
+    site: 'ant.design',
+    timeSpent: '0:03:47',
+  },
+  {
+    id: '7',
+    project: 'Interns',
+    site: 'app.hubstaff.com',
+    timeSpent: '0:00:37',
+  },
+  {
+    id: '8',
+    project: 'Interns',
+    site: 'charts.ag-grid.com',
+    timeSpent: '0:00:11',
+  },
+  {
+    id: '9',
+    project: 'Interns',
+    site: 'google.com',
+    timeSpent: '0:00:02',
+  },
+  {
+    id: 'divider3',
+    isDivider: true,
+    date: 'Mon, Dec 25, 2023 9:00 am IST',
+  },
+  {
+    id: '10',
+    project: 'Interns',
+    site: 'app.hubstaff.com',
+    timeSpent: '0:05:13',
+  },
+  {
+    id: '11',
+    project: 'Interns',
+    site: 'chat.openai.com',
+    timeSpent: '0:02:22',
+  },
+  {
+    id: '12',
+    project: 'Interns',
+    site: 'ant.design',
+    timeSpent: '0:01:13',
+  },
+  {
+    id: '13',
+    project: 'Interns',
+    site: 'google.com',
+    timeSpent: '0:00:34',
+  },
+  {
+    id: '14',
+    project: 'Interns',
+    site: 'localhost',
+    timeSpent: '0:00:07',
+  },
+  {
+    id: '15',
+    project: 'Interns',
+    site: 'github.com',
+    timeSpent: '0:00:01',
+    },
+  {
+    id: '33',
+    project: 'Interns',
+    site: 'Google Chrome',
+    timeSpent: '0:11:22',
+    sessions: 6,
+  },
+  {
+    id: '34',
+    project: 'Interns',
+    site: 'Hubstaff',
+    timeSpent: '0:09:04',
     sessions: 3,
   },
   {
-    key: '3',
+    id: '35',
     project: 'Interns',
-    appName: 'Visual Studio Code',
-    timeSpent: '0:04:24',
+    site: 'Microsoft® Windows® Operating System',
+    timeSpent: '0:04:57',
+    sessions: 2,
+  },
+  {
+    id: '36',
+    project: 'Interns',
+    site: 'GitHub Desktop',
+    timeSpent: '0:02:23',
     sessions: 1,
   },
   {
-    key: '4',
+    id: '37',
     project: 'Interns',
-    appName: 'Hubstaff',
-    timeSpent: '0:00:03',
+    site: 'Visual Studio Code',
+    timeSpent: '0:02:20',
     sessions: 2,
   },
   {
-    key: 'divider1',
-    divider: true,
-    date: 'Mon, Dec 25, 2023 1:00 am IST',
-  },
-  {
-    key: '5',
+    id: '38',
     project: 'Interns',
-    appName: 'Google Chrome',
-    timeSpent: '0:12:56',
-    sessions: 5,
-  },
-  {
-    key: '6',
-    project: 'Interns',
-    appName: 'Hubstaff',
-    timeSpent: '0:00:06',
-    sessions: 2,
-  },
-  {
-    key: '7',
-    project: 'Interns',
-    appName: 'Microsoft® Windows® Operating System',
-    timeSpent: '0:00:04',
-    sessions: 2,
-  },
-  {
-    key: '8',
-    project: 'Interns',
-    appName: 'MicrosoftWindows.Client.CBS',
-    timeSpent: '0:00:03',
-    sessions: 2,
-  },
-  {
-    key: 'divider2',
-    divider: true,
-    date: 'Mon, Dec 25, 2023 1:00 am IST',
-  },
-  {
-    key: '9',
-    project: 'Interns',
-    appName: 'Visual Studio Code',
-    timeSpent: '0:32:09',
-    sessions: 119,
-  },
-  {
-    key: '10',
-    project: 'Interns',
-    appName: 'Google Chrome',
-    timeSpent: '0:27:02',
-    sessions: 125,
-  },
-  {
-    key: '11',
-    project: 'Interns',
-    appName: 'Microsoft® Windows® Operating System',
-    timeSpent: '0:00:08',
-    sessions: 5,
-  },
-  {
-    key: 'divider3',
-    divider: true,
-    date: 'Mon, Dec 25, 2023 1:00 am IST',
-
-  },
-  {
-    key: '18',
-    project: 'Interns',
-    appName: 'Visual Studio Code',
-    timeSpent: '0:32:09',
-    sessions: 119,
-  },
-  {
-    key: '19',
-    project: 'Interns',
-    appName: 'Google Chrome',
-    timeSpent: '0:27:02',
-    sessions: 125,
-  },
-  {
-    key: '20',
-    project: 'Interns',
-    appName: 'Microsoft® Windows® Operating System',
-    timeSpent: '0:00:08',
-    sessions: 5,
-  },
-  {
-    key: '21',
-    project: 'Interns',
-    appName: 'MicrosoftWindows.Client.CBS',
-    timeSpent: '0:00:04',
-    sessions: 4,
-  },
-  {
-    key: '22',
-    project: 'Interns',
-    appName: 'Hubstaff',
-    timeSpent: '0:00:04',
+    site: 'Figma',
+    timeSpent: '0:00:54',
     sessions: 1,
   },
   {
-    key: '23',
+    id: 'divider8',
+    isDivider: true,
+    date: 'Mon, Dec 25, 2023 7:00 pm IST',
+  },
+  {
+    id: '39',
     project: 'Interns',
-    appName: 'GitHub Desktop',
-    timeSpent: '0:00:02',
+    site: 'Google Chrome',
+    timeSpent: '0:03:47',
+    sessions: 2,
+  },
+  {
+    id: '40',
+    project: 'Interns',
+    site: 'GitHub Desktop',
+    timeSpent: '0:03:12',
     sessions: 1,
   },
   {
-    key: 'divider4',
-    divider: true,
-    date: 'Mon, Dec 25, 2023 1:00 am IST',
-
+    id: '41',
+    project: 'Interns',
+    site: 'MicrosoftWindows.Client.CBS',
+    timeSpent: '0:02:41',
+    sessions: 1,
   },
   {
-    key: '27',
+    id: '42',
     project: 'Interns',
-    appName: 'Visual Studio Code',
-    timeSpent: '0:23:28',
-    sessions: 43,
+    site: 'Ant Design',
+    timeSpent: '0:02:21',
+    sessions: 1,
   },
   {
-    key: '28',
+    id: '43',
     project: 'Interns',
-    appName: 'Google Chrome',
-    timeSpent: '0:16:48',
-    sessions: 47,
+    site: 'Chat.OpenAI',
+    timeSpent: '0:02:13',
+    sessions: 1,
   },
   {
-    key: '29',
+    id: '44',
     project: 'Interns',
-    appName: 'GitHub Desktop',
-    timeSpent: '0:07:15',
-    sessions: 4,
-  },
-  {
-    key: '30',
-    project: 'Interns',
-    appName: 'MSTeams',
-    timeSpent: '0:01:49',
-    sessions: 2,
-  },
-  {
-    key: '31',
-    project: 'Interns',
-    appName: 'MicrosoftWindows.Client.CBS',
-    timeSpent: '0:00:08',
-    sessions: 2,
-  },
-  {
-    key: '32',
-    project: 'Interns',
-    appName: 'Microsoft® Windows® Operating System',
-    timeSpent: '0:00:05',
-    sessions: 4,
+    site: 'YouTube',
+    timeSpent: '0:01:40',
+    sessions: 1,
   },
 ];
 
+
 const columns = [
   {
-    // title: 'Date',
     key: 'date',
     width: 300,
     render: (d) => (
-        d.date ? (
-            <p>{ d.date }</p>
-        ) : null   
+      d.date ? (
+        <p>{d.date}</p>
+      ) : null
     )
   },
   {
     title: 'Project',
     dataIndex: 'project',
     key: 'project',
+    width: 300,
   },
   {
-    title: 'App Name',
-    dataIndex: 'appName',
-    key: 'appName',
+    title: 'Site',
+    dataIndex: 'site',
+    key: 'site',
+    width: 900,
   },
   {
     title: 'Time Spent (hrs)',
     dataIndex: 'timeSpent',
     key: 'timeSpent',
-  },
-  {
-    title: 'Sessions',
-    dataIndex: 'sessions',
-    key: 'sessions',
-  },
+  }
 ];
 
 
-
-export const Apps = () => {
+export const Urls = () => {
 
     const rowClassName = (record, index) => {
         return record.date ? 'highlighted-row' : ''; // Add a class for rows with date
     };
 
   return (
-    <div className='apps-container'>
-        <div className="apps-header-container">
+    <div>
+          <div className="apps-header-container">
             <div className='app-row-1'>
-                <p>App activity</p>
+                <p>URL activity</p>
             </div>
             <div className='app-row-2'>
                 <div className="apps-row-2-left">
@@ -302,6 +308,7 @@ export const Apps = () => {
             </div>
           </div>
           
+
           <div className="apps-table-container">
               <div className="apps-table">
                    <Table

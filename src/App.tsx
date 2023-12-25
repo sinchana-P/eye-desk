@@ -9,6 +9,7 @@ import { Timesheets } from './scenes/timesheets';
 import { Approvals } from './scenes/approvals';
 import { Screenshots } from './scenes/screenshots';
 import { Apps } from './scenes/apps';
+import { Urls } from './scenes/urls';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path='/approvals' element={ <Approvals /> } />
             <Route path='/screenshots' element={ <Screenshots /> } />
             <Route path='/apps' element={ <Apps /> } />
+            <Route path='/urls' element={ <Urls /> } />
             </Routes>
           </Layout>
       </Layout>
