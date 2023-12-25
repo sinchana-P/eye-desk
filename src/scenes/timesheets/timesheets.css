@@ -68,6 +68,9 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+.row-two-right .filter-btn {
+  margin-left: 20px;
+}
 .row-two-right div > p {
   margin: 0;
 }
