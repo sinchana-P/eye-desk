@@ -4,6 +4,7 @@ import './timesheets.css'
 import { Button, DatePicker, Select, Table } from 'antd';
 import { TbColumns3 } from "react-icons/tb";
 import { HiDownload } from "react-icons/hi";
+import { ColumnsType } from 'antd/es/table';
 
 const { RangePicker } = DatePicker;
 
