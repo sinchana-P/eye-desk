@@ -214,6 +214,7 @@ const columns = [
     title: 'App Name',
     dataIndex: 'appName',
     key: 'appName',
+    width: 800,
   },
   {
     title: 'Time Spent (hrs)',
