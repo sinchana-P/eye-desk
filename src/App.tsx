@@ -10,6 +10,7 @@ import { Approvals } from './scenes/approvals';
 import { Screenshots } from './scenes/screenshots';
 import { Apps } from './scenes/apps';
 import { Urls } from './scenes/urls';
+import AllReports from './scenes/reports/AllReports'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path='/screenshots' element={ <Screenshots /> } />
             <Route path='/apps' element={ <Apps /> } />
             <Route path='/urls' element={ <Urls /> } />
+            <Route path='/reports' element={ <AllReports/> } />
             </Routes>
           </Layout>
       </Layout>
