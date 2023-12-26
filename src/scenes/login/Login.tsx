@@ -3,7 +3,7 @@ import './Login.css'
 import FormLayout from './FormLayoutLogin';
 
 
-const App: React.FC = () => (
+export const Login: React.FC = () => (
  <div className='row'>
        <div className='column left' >
               <h1 style={{marginLeft:185}}>Sign in to EyeDesk</h1>
@@ -15,4 +15,4 @@ const App: React.FC = () => (
  </div>
 );
 
-export default App;
+// export default App;

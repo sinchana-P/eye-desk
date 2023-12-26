@@ -11,6 +11,8 @@ import { Screenshots } from './scenes/screenshots';
 import { Apps } from './scenes/apps';
 import { Urls } from './scenes/urls';
 import AllReports from './scenes/reports/AllReports'
+import {Registration} from './scenes/registration/Registration'
+import {Login} from './scenes/login/Login'
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
             <Route path='/apps' element={ <Apps /> } />
             <Route path='/urls' element={ <Urls /> } />
             <Route path='/reports' element={ <AllReports/> } />
+            <Route path='/registration' element={ <Registration/> } />
+            <Route path='/login' element={ <Login/> } />
             </Routes>
           </Layout>
       </Layout>

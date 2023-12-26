@@ -3,7 +3,7 @@ import React from 'react';
 import FormLayout from './FormaLayoutReg';
 import './Registration.css'
 
-const App: React.FC = () => (
+export const Registration: React.FC = () => (
  <div className='row'>
        <div className='column left' >
               <h1 style={{marginLeft:185}}>Register to EyeDesk</h1>
@@ -15,4 +15,4 @@ const App: React.FC = () => (
  </div>
 );
 
-export default App;
+// export default App;

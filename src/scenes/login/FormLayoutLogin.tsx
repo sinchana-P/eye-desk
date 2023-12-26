@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Form, Input} from 'antd';
+import { Button, Checkbox, Form, Input,Select } from 'antd';
+import { Link } from 'react-router-dom';
 
 
 const onFinish = (values: any) => {
@@ -11,10 +12,7 @@ const onFinishFailed = (errorInfo: any) => {
 };
 
 type FieldType = {
-  firstname?:string;
-  lastname?:string;
   username?: string;
-  email?:string;
   password?: string;
   remember?: string;
 };
@@ -31,29 +29,20 @@ const FormLayout: React.FC = () => (
     onFinishFailed={onFinishFailed}
     autoComplete="off"
   >
-    
+    <Form.Item label="Role">
+          <Select placeholder='Role'>
+            <Select.Option value="demo">User</Select.Option>
+            <Select.Option value="demo">Admin</Select.Option>
+            <Select.Option value="demo">Manager</Select.Option>
+          </Select>
+        </Form.Item>
     <Form.Item<FieldType>
-      label="First Name"
-      name="firstname"
-      rules={[{ required: true, message: 'Please input your firstname!' }]}
+      label="Username"
+      name="username"
+      rules={[{ required: true, message: 'Please input your username!' }]}
     >
-      <Input placeholder='Firstname'/>
+      <Input placeholder='Username'/>
     </Form.Item>
-    <Form.Item<FieldType>
-      label="Last Name"
-      name="lastname"
-      rules={[{ required: true, message: 'Please input your lastname!' }]}
-    >
-      <Input placeholder='Lastname'/>
-    </Form.Item>
-    <Form.Item<FieldType>
-      label="Email"
-      name="email"
-      rules={[{ required: true, message: 'Please input your lastname!' }]}
-    >
-      <Input placeholder="Email address"/>
-    </Form.Item>
-    
 
     <Form.Item<FieldType>
       label="Password"
@@ -61,24 +50,23 @@ const FormLayout: React.FC = () => (
       rules={[{ required: true, message: 'Please input your password!' }]}
     >
       <Input.Password placeholder='Password'/>
+      <a style={{float:'right'}}>Forgot Password?</a>
     </Form.Item>
 
     <Form.Item<FieldType>
-      label="confirmPassword"
-      name="password"
-      rules={[{ required: true, message: 'Please input your password!' }]}
+      name="remember"
+      valuePropName="checked"
+      wrapperCol={{ offset: 8, span: 10 }}
     >
-      <Input.Password placeholder='Confirm Password'/>
+      <Checkbox>Remember me</Checkbox>
     </Form.Item>
-
- 
 
     <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
       <Button type="primary" htmlType="submit">
-        Create Account
+        Login
       </Button>
       <br />
-      <p>Already Registered? <a href="">Login</a></p>
+      <p>New user? <Link to="/registration">Register</Link></p>
     </Form.Item>
 
     
